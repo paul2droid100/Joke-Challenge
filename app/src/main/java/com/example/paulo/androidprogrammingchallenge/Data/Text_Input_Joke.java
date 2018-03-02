@@ -59,7 +59,7 @@ public class Text_Input_Joke extends AppCompatActivity {
                     String mRandomJoke = body.getValue().get(0).getJoke();
 
                     AlertDialog.Builder mBuilder = new AlertDialog.Builder(Text_Input_Joke.this);
-                    mBuilder.setTitle("CONNECTION");
+                    mBuilder.setTitle("PERSONALISED JOKE");
                     mBuilder.setMessage(mRandomJoke);
                     mBuilder.setCancelable(false);
                     mBuilder.setPositiveButton("Dismiss", new DialogInterface.OnClickListener() {

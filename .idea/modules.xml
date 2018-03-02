@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidProgrammingChallenge.iml" filepath="$PROJECT_DIR$/AndroidProgrammingChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Joke-Challenge.iml" filepath="$PROJECT_DIR$/Joke-Challenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
