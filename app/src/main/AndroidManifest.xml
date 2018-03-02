@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Data.Text_Input_Joke" />
-        <activity android:name=".NeverEndingList"></activity>
+        <activity android:name=".Data.NeverEndingList"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.paulo.androidprogrammingchallenge;
+package com.example.paulo.androidprogrammingchallenge.Data;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;

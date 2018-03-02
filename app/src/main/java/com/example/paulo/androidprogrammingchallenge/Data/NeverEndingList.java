@@ -1,7 +1,5 @@
-package com.example.paulo.androidprogrammingchallenge;
+package com.example.paulo.androidprogrammingchallenge.Data;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,9 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.example.paulo.androidprogrammingchallenge.Data.Text_Input_Joke;
+import com.example.paulo.androidprogrammingchallenge.Adapter.CustomAdapter;
 import com.example.paulo.androidprogrammingchallenge.Model.JokeBig;
 import com.example.paulo.androidprogrammingchallenge.Model.Jokes;
+import com.example.paulo.androidprogrammingchallenge.R;
 import com.example.paulo.androidprogrammingchallenge.apiCall.apiCall;
 
 import java.util.ArrayList;

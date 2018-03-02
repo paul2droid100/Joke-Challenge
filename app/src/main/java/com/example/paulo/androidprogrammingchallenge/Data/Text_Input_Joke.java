@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.paulo.androidprogrammingchallenge.MainActivity;
 import com.example.paulo.androidprogrammingchallenge.Model.JokeBig;
 import com.example.paulo.androidprogrammingchallenge.R;
 import com.example.paulo.androidprogrammingchallenge.apiCall.apiCall;
@@ -34,11 +35,15 @@ public class Text_Input_Joke extends AppCompatActivity {
     public void submit(View view){
 
         String[] parts = mEditText.getText().toString().split(" ");
-        String string1 = parts[0].trim();
-        String string2 = parts[1].trim();
+        String string1;
+        String string2;
+        try {
+            string1 = parts[0].trim();
+            string2 = parts[1].trim();
+            System.out.println(string1);
+            System.out.println(string2);
 
-        System.out.println(string1);
-        System.out.println(string2);
+
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -49,6 +54,7 @@ public class Text_Input_Joke extends AppCompatActivity {
         apiCall ap = retrofit.create(apiCall.class);
 
         Call<JokeBig> jokers = ap.getRandomJokesMainCharacter(string1, string2);
+
         jokers.enqueue(new Callback<JokeBig>() {
 
             @Override
@@ -80,6 +86,21 @@ public class Text_Input_Joke extends AppCompatActivity {
                 printMessage(throwable.getMessage());
             }
         });
+    }catch(Exception e){
+            AlertDialog.Builder mBuilder = new AlertDialog.Builder(Text_Input_Joke.this);
+            mBuilder.setTitle("Error");
+            mBuilder.setMessage("Please Enter the First and Last name seperated by one blank space" +
+                    "\n e.g Dave Jones");
+            mBuilder.setCancelable(false);
+            mBuilder.setPositiveButton("Dismiss", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            mBuilder.show();
+
+    }
     }
     private void printMessage(String message) {
         System.out.println(message);

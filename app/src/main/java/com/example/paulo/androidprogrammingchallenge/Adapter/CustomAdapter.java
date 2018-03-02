@@ -1,4 +1,4 @@
-package com.example.paulo.androidprogrammingchallenge;
+package com.example.paulo.androidprogrammingchallenge.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.example.paulo.androidprogrammingchallenge.Model.Jokes;
+import com.example.paulo.androidprogrammingchallenge.R;
 
 import java.util.ArrayList;
 

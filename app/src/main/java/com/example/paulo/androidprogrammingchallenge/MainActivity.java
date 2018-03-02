@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.paulo.androidprogrammingchallenge.Data.NeverEndingList;
 import com.example.paulo.androidprogrammingchallenge.Data.Text_Input_Joke;
 import com.example.paulo.androidprogrammingchallenge.Model.JokeBig;
 import com.example.paulo.androidprogrammingchallenge.apiCall.apiCall;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                             String mRandomJoke = body.getValue().get(0).getJoke();
 
                             AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-                            mBuilder.setTitle("CONNECTION");
+                            mBuilder.setTitle("JOKE OF THE DAY");
                             mBuilder.setMessage(mRandomJoke);
                             mBuilder.setCancelable(false);
                             mBuilder.setPositiveButton("Dismiss", new DialogInterface.OnClickListener() {
