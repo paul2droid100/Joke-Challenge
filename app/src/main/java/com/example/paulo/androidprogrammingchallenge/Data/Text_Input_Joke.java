@@ -40,7 +40,7 @@ public class Text_Input_Joke extends AppCompatActivity {
         try {
             string1 = parts[0].trim();
             string2 = parts[1].trim();
-         
+
 
 
 
